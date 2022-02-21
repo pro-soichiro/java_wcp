@@ -7,11 +7,12 @@ public class Chapter06 {
 		System.out.println(val);
 		val *= 5;
 		System.out.println(val);
-		boolean bool = val == 50;
+		boolean bool = (val == 50);
 		System.out.println(bool);
-		boolean a = val <= 50;
-		boolean b = val % 10 == 0;
-		bool = a && b;
+//		boolean a = val <= 50;
+//		boolean b = val % 10 == 0;
+//		bool = a && b;
+		bool = (val <= 50) && (val % 10 == 0);
 		System.out.println(bool);	
 	}
 }
