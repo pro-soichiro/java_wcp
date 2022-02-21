@@ -1,6 +1,7 @@
 
 public class Chapter07 {
 	public static void main(String[] args) {
+//		問題1
 		int distance = 24;
 		if (distance <= 5) {
 			System.out.println("とても近いです");
@@ -11,5 +12,22 @@ public class Chapter07 {
 		} else {
 			System.out.println("とても遠いです");
 		}
+		
+//		問題2
+		String signal = "yellow";
+		switch (signal) {
+		case "red":
+			System.out.println("赤信号です");
+			break;
+		case "yellow":
+			System.out.println("黄信号です");
+			break;
+		case "blue":
+			System.out.println("青信号です");
+			break;
+		default:
+			System.out.println("信号の色ではありません");
+		};
+		
 	}
 }
