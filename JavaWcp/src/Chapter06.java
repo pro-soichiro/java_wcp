@@ -12,7 +12,8 @@ public class Chapter06 {
 //		boolean a = val <= 50;
 //		boolean b = val % 10 == 0;
 //		bool = a && b;
-		bool = (val <= 50) && (val % 10 == 0);
+		bool = (val < 50) && (val % 10 == 0);
+//		より小さいは小なり <
 		System.out.println(bool);	
 	}
 }
