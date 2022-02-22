@@ -2,11 +2,10 @@
 public class Chapter08 {
 	public static void main(String[] args) {
 //		1 while
-		int num1 = 1;
-		while (num1 < 5) {
-			int num2 = num1 * num1;
-			System.out.println(num2);
-			num1++;
+		int num = 1;
+		while (num < 5) {
+			System.out.println(num * num);
+			num++;
 		}
 		
 //		2 for
