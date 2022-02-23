@@ -17,12 +17,12 @@ public class Car {
     // ・残量を計算
     public void move(int km) {
     	System.out.println(km + " km 走ります");
-    	fuelAmount = fuelAmount - km / fuelCost;
+    	this.fuelAmount -= (km / fuelCost);
     }
     
 
     // fuelAmountを取得するメソッドを作成
     public double getFuelAmount() {
-    	return fuelAmount;
+    	return this.fuelAmount;
     }
 }
