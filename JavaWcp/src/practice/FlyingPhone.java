@@ -4,7 +4,7 @@ import extend.phone.Phone;
 
 public class FlyingPhone implements Phone, Flying {
     // プログラムを作成
-	int time;
+	private int time;
 	public FlyingPhone(int time) {
 		this.time = time;
 	}
