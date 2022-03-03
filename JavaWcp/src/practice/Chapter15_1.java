@@ -6,17 +6,13 @@ public class Chapter15_1 {
         int b = 427;
         System.out.println(a + " と " + b + " の最大公約数は、" + gcd(a, b) + "です。");
     }
-
     // ユークリッドの互除法で最大公約数を計算するメソッド
     static int gcd(int a, int b) {
-    	int x = 0;
-    	int y = 0;
-		
-		x = a % b;
-		if (x != 0) {
-			gcd(b,x);
+		a %= b;
+		if (a != 0) {
+			return gcd(b,a);
 		} else {
-			return x;
+			return b;
 		}
     }
 }
