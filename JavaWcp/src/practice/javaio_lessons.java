@@ -3,6 +3,7 @@ package practice;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 
 public class javaio_lessons {
@@ -11,13 +12,17 @@ public class javaio_lessons {
 			// Fileのインスタンスを作成
 			// File file = new File(パス名);
 			File file = new File("resources/test.txt");
+			File file_write = new File("resources/test_write.txt");
 			// 文字ファイルを読み込むための簡易クラス
 			// 引数はfile名
 			FileReader filereader = new FileReader(file);
+			FileWriter filewriter = new FileWriter(file_write);
 			
 			// 上記をまとめて下記にすることも可能
 			// FileReader filereader = new FileReader(new File("resources/test.txt"));
-			
+			filewriter.write("こんにちは");
+			filewriter.write("\n");
+			filewriter.write("こんばんは");
 			int ch;
 			// read()
 			// 単一の文字を読み込みます。
@@ -26,7 +31,9 @@ public class javaio_lessons {
 			while ((ch = filereader.read()) != -1) {
 				System.out.print((char)ch);
 			}
+			// 処理を終了するためにはclose()を使う。
 			filereader.close();
+			filewriter.close();
 			
 		// ファイルが見つからなかったときの例外
 		} catch (FileNotFoundException e) {
