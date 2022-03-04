@@ -18,8 +18,8 @@ public class Chapter15_2 {
         // Java7以降に追加された「try-with-resources」文で処理
         // Filesクラスを使用して、BufferedReaderクラスのインスタンスを生成
         // Filesクラスを使用して、BufferedWriterクラスのインスタンスを生成
-        try (BufferedReader bufferedReader = Files.newBufferedReader(inputPath);) {
-        	BufferedWriter bufferedWriter = Files.newBufferedWriter(outputPath);
+        try (BufferedReader bufferedReader = Files.newBufferedReader(inputPath);
+        	 BufferedWriter bufferedWriter = Files.newBufferedWriter(outputPath);){
         	
             String line = null;
             
@@ -37,7 +37,7 @@ public class Chapter15_2 {
                 System.out.println(line);
             }
            
-            bufferedWriter.close();
+//            bufferedWriter.close();
         // 例外処理を記述
         // printStackTraceで例外を出力
         } catch (IOException e)  {
