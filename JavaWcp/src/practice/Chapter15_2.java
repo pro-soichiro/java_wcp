@@ -37,7 +37,7 @@ public class Chapter15_2 {
                 System.out.println(line);
             }
            
-
+            bufferedWriter.close();
         // 例外処理を記述
         // printStackTraceで例外を出力
         } catch (IOException e)  {
