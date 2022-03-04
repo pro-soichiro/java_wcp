@@ -91,3 +91,73 @@ public class Chapter15_1 {
     }
 }
 ```
+
+
+## 2 ファイルの入出力の問題
+### 問題
+JavaWcpの直下に「resources」ディレクトリ作成して、ディレクトリに以下の「input.txt」ファイルを作成してください。
+作成した「input.txt」ファイルの読み込んで「output.txt」ファイルを出力するプログラム「Chapter15_2.java」を完成させてください。
+
+### 解答
+- IOExceprion  
+入出力処理の失敗、または割り込みの発生によって生成される例外の汎用クラス
+
+
+- Filesクラス
+
+> Java1.7より追加されたAPIであるFilesクラスで、Fileクラスよりも高度なファイル操作を行うことができる。
+Filesクラスは、基本的にPathクラスを引数にする。
+
+```java
+Path path = Paths.get("テスト");
+Files.createDirectory(path);
+```
+このクラスファイルが存在するディレクトリに「テスト」という名前でディレクトリを新規作成する。
+
+```java
+Path path = Paths.get("テスト");
+Files.createFile(path);
+```
+このクラスファイルが存在するディレクトリに「テスト」という名前でファイルを新規作成する。
+
+- FileSystems.getDefaultメソッド
+現在のファイルシステム取得
+
+- Pathオブジェクトとは？  
+Files クラスで用意されているメソッド使ってファイルやディレクトリに関する操作を行う場合に、ファイルやディレクトリを表すのに Path オブジェクトを作成して使用する。
+
+- getPathメソッド  
+Pathオブジェクトの生成ができる。
+
+```java
+Fileオブジェクト.getPath();
+```
+
+- BufferedReader
+
+> テキストファイルを読み込むためのクラス。
+
+- readlineメソッド
+
+> テキストファイルを1行ずつ読み込むメソッド
+
+BufferedReader bufferedReader = new BufferedReader(Fileオブジェクト);
+
+
+### 正解
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
