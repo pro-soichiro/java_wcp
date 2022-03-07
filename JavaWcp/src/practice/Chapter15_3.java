@@ -12,7 +12,9 @@ public class Chapter15_3 {
 
         int i3 = 1;
         int i4 = 2;
-        double d3 = (double)i3 / (double)i4;
+        double d3 = (double) i3 / i4;
+//        int型同士の計算は計算結果もint型になり、小数点以下が切り捨てられてしまいます。
+//        そのため、どちらかの変数を浮動小数型のdouble型にキャストして、計算結果をdouble型にする必要があります。
 //        double d3 = (double)(i3 / i4);
         System.out.println(d3);
 
