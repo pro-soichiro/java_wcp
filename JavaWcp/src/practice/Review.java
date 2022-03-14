@@ -74,6 +74,24 @@ public class Review {
 		default:
 			System.out.println("信号の色ではありません");
 		}
+		int num = 1;
+		while (num < 5) {
+			System.out.println(num * num);
+			num ++;
+		}
+		
+		int[] ary = {2,4,6,7};
+		for(int n = 0; n < ary.length; n++) {
+			System.out.println(ary[n]);
+		}
+		
+		for(int number: ary) {
+			if(number % 2 == 0) {
+				continue;
+			}
+			System.out.println(number);
+		}
+		
 	}
 	
 	
