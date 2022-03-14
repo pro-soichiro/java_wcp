@@ -7,7 +7,7 @@ public class SJ_2_13 {
 		String age = "31";
 		int n = Integer.parseInt(age);
 		
-		System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。"); 
+		System.out.println("あなたは来年、" + (n + 1) + "歳になりますね。");
 		
 	}
 	
