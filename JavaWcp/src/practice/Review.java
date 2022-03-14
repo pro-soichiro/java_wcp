@@ -32,6 +32,21 @@ public class Review {
 		for( int j = 0; j < array.length; j ++) {
 			System.out.println(array[j]);
 		}
+		
+		int val = 2 + 5;
+		System.out.println(val);
+//		インクリメント
+		val ++;
+		System.out.println(val);
+		val *= 5;
+		System.out.println(val);
+		boolean bool = val == 50;
+		System.out.println(bool);
+		bool = val <= 50 && val % 10 == 0;
+//		〇〇より小さいは x < 〇〇
+//		よって
+//		bool = (val < 50) && (val % 10 == 0);
+		System.out.println(bool);
 	}
 	
 	
