@@ -7,8 +7,8 @@ public class SJ_3_8_practice {
 //		3-1
 //		1. weight == 60;
 //		2. ( age1 + age2 ) * 2 > 60
-//		3. age % 2 != 0
-//		4. name.qpuale("湊");
+//		3. age % 2 == 1
+//		4. name.equals("湊");
 		
 //		3-2
 //		C,D,E
@@ -22,10 +22,12 @@ public class SJ_3_8_practice {
 		if(isHungry == 0) {
 			System.out.println("お腹いっぱいです");
 		} else {
-			System.out.println("はらぺこです");		
-			System.out.println(food + "をいただきます");
-			System.out.println("ごちそうさまでした");	
+			System.out.println("はらぺこです");
 		}
+		if (isHungry == 1) {
+			System.out.println(food + "をいただきます");
+		} 
+		System.out.println("ごちそうさまでした");	
 		
 //		三項条件演算子に書き換える　できなかった
 //		if(isHungry == 0 ? 
@@ -33,6 +35,9 @@ public class SJ_3_8_practice {
 //			System.out.println("はらぺこです" + food + "をいただきます" + "\n" + "ごちそうさまでした")	
 //			)
 //		}
+		
+//		22~26のコードは下記のように「三項条件演算子」に書き換えられる
+//		System.out.println(isHungry == 0 ? "お腹いっぱいです" : "はらぺこです");
 		
 //		3-4
 		boolean tenki = true;
@@ -63,8 +68,8 @@ public class SJ_3_8_practice {
 			case 4:
 				System.out.println("変更します");
 				break;
-			default:
 		}
+//		1から4のいずれでもない場合は何もしないため、defaultラベルは不要
 		
 //		3-6
 		System.out.println("【数あてゲーム】");
