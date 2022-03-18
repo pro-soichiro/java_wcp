@@ -42,21 +42,33 @@ public class SJ_5_8_practice {
 		
 //		5-1
 		System.out.println("-------  5-1  -------");
+		
 		introduceOnself();
 		
 		
 //		5-2
 		System.out.println("-------  5-2  -------");
-		email("お世話になっております。","test@gmail.com","〇〇の件でご連絡いたしました。その後進展はいかがでしょうか？");
+
+		String title = "お世話になっております。";
+		String address = "test@gmail.com"; 
+		String text = "〇〇の件でご連絡いたしました。その後進展はいかがでしょうか？"; 
+		email(title,address,text);
 	
 //		5-3
 		System.out.println("-------  5-3  -------");
-		email("admin@gmail.com","このメールはテストです。");
+		
+		email(address,text);
+
 		
 //		5-4
 		System.out.println("-------  5-4  -------");
-		System.out.println("三角形の底辺の長さが10.0cm,高さが5.0cmの場合、面積は" + calcTriangleArea(10.0,5.0) + "c㎡");
-		System.out.println("円の半径が5.0cmの場合、面積は" + calcCircleArea(5.0) + "c㎡");
+		
+		double bottom = 10.0;
+		double height = 5.0;
+		double radius = 5.0;
+		
+		System.out.println("三角形の底辺の長さが " + bottom + "cm,高さが" + height + "cmの場合、面積は" + calcTriangleArea(bottom,height) + "c㎡");
+		System.out.println("円の半径が" + radius + "cmの場合、面積は" + calcCircleArea(radius) + "c㎡");
 		
 	}
 	
