@@ -2,6 +2,7 @@ package sukkiriJava;
 
 public class Hero {
 	
+//	フィールド
 	String name;
 	int hp;
 	
