@@ -13,7 +13,17 @@ public class SJ_6_8_practice {
 		sukkiriJava.comment.Kouhan.showMondokoro();
 	}
 	
+//	6-4
 	
+//	- Main.class
+//	c:¥work¥ex64
+//	- Zenhan.class
+//	c:¥work¥ex64¥comment
+//	- Kouhan.class
+//	c:¥work¥ex64¥comment
 	
+//	6-5
+	
+//	c:¥javaapp¥koumon¥comment
 
 }
