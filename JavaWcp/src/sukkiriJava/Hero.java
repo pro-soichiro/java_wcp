@@ -7,7 +7,9 @@ public class Hero {
 	int hp;
 	Sword sword;
 	
-	public void attack() {   }
+	public void attack() {   
+		System.out.println(this.name + "は、" + sword.name + "で攻撃した！");
+	}
 //	名前：sleep
 //	必要情報：なし
 //	結果：なし
