@@ -9,8 +9,10 @@ public class Cleric {
 	final int MAX_MP = 10;
 	
 	public void selfAid() {
+		System.out.println(this.name + "はセルフエイドを唱えた！");
 		this.mp -= 5;
-		this.hp = MAX_HP;
+		this.hp = this.MAX_HP;
+		System.out.println("HPが最大まで回復した");		
 	}
 	public int pray(int sec){
 		
