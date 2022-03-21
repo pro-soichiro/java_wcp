@@ -1,4 +1,5 @@
 package sukkiriJava;
+import java.util.Random;
 
 public class Cleric {
 	
@@ -15,14 +16,20 @@ public class Cleric {
 		System.out.println("HPが最大まで回復した");		
 	}
 	public int pray(int sec){
+		System.out.println(this.name + "は" + sec + "秒間天に祈った！");
 		
-		int mp = new java.util.Random().nextInt(2) + sec;
+		int recover = new Random().nextInt(3) + sec;
+//		Mathクラスのminメソッド
+//		引数に指定した値のうち、小さい方の値を返す
+//		<4回復する時、現在mpが9の場合>
+//		10 - 9 , 4　=> 1が返る
+//		<4回復する時、現在mpが5の場合>
+//		10 - 5 , 4  => 4が返る
+		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
 		
-		if((this.mp + mp) <= MAX_MP) {
-			this.mp += mp;
-		}
-		
-		return mp;
+		this.mp += recoverActual;
+		System.out.println("MPが" + recoverActual + "回復した");		
+		return recoverActual;
 	}
 	
 }
