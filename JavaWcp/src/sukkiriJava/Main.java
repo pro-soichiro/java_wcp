@@ -15,6 +15,20 @@ public class Main {
 		h.slip(); //転べ
 		h.sit(25); //25秒座れ
 		h.run(); //逃げろ
+		
+		Matango m1 = new Matango();
+		m1.hp = 50;
+		m1.suffix = 'A';
+		
+		Matango m2 = new Matango();
+		m2.hp = 48;
+		m2.suffix = 'B';
+		
+//		冒険の始まり
+		h.slip(); //勇者は転ぶ
+		m1.run(); //お化けキノコAが逃げる
+		m2.run(); //お化けキノコBが逃げる
+		h.run(); //勇者も逃げる
 	}
 
 }
