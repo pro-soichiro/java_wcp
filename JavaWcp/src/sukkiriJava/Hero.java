@@ -23,7 +23,7 @@ public class Hero {
 //	必要情報：なし
 //	結果：なし
 //	処理内容：眠った後はHPが100に回復する
-	public void sleep() {
+	public final void sleep() {
 		this.hp = 100;
 		System.out.println(this.name + "は、眠って回復した！");
 	}
