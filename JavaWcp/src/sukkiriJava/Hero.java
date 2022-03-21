@@ -12,6 +12,11 @@ public class Hero {
 		this.name = name;
 	}
 	
+	public Hero() {
+		this.hp = 100;
+		this.name = "名無しの勇者";
+	}
+	
 	public void attack() {   
 		System.out.println(this.name + "は、" + sword.name + "で攻撃した！");
 	}
