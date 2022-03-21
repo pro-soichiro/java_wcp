@@ -2,9 +2,9 @@ package sukkiriJava;
 
 public class SuperHero extends Hero {
 	boolean flying;
-	public SuperHero(String name) {
-		this.hp = 100;
-		this.name = name;
+	public SuperHero() {
+		super();
+		System.out.println("SuperHeroのコンストラクタが動作");
 	}
 	
 	public void fly() {

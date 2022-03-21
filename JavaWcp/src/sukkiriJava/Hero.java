@@ -14,6 +14,7 @@ public class Hero {
 	
 	public Hero() {
 		this("名無しの勇者");
+		System.out.println("Heroのコンストラクタが動作");
 	}
 	
 	public void attack(Matango m) {   
