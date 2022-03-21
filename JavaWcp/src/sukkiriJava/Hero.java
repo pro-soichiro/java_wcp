@@ -5,6 +5,7 @@ public class Hero {
 //	フィールド
 	String name;
 	int hp;
+	Sword sword;
 	
 	public void attack() {   }
 //	名前：sleep
