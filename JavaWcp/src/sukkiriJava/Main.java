@@ -29,6 +29,17 @@ public class Main {
 		m1.run(); //お化けキノコAが逃げる
 		m2.run(); //お化けキノコBが逃げる
 		h.run(); //勇者も逃げる
+		
+		Cleric c = new Cleric();
+		c.name = "聖職者";
+		
+		System.out.println(c.name + "が生まれた!");
+		System.out.println("[ステータス]HP:" + c.hp + "MP:" + c.mp);
+		
+		c.selfAid();
+		c.pray(3);
+//		System.out.println(c.name + "は、" + c.pray(3) + "秒間祈った。");
+		System.out.println("[ステータス]HP:" + c.hp + "MP:" + c.mp);
 	}
 
 }
