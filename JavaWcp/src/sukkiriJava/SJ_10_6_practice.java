@@ -18,7 +18,7 @@ public class SJ_10_6_practice {
 //		10-3
 //		PoisonMarangoの作成
 		Hero h = new Hero("Hero");
-		PoisonMatango m = new PoisonMatango();
+		PoisonMatango m = new PoisonMatango('A');
 		
 		m.attack(h);
 		

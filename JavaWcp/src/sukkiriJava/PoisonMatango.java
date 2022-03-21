@@ -4,11 +4,11 @@ public class PoisonMatango extends Matango {
 	
 	int poisonAttack = 5;
 	
-	public PoisonMatango(){
-		super('A');
+	public PoisonMatango(char suffix){
+		super(suffix);
 	}
 	
-	public void sttack(Hero h) {
+	public void attack(Hero h) {
 		super.attack(h);
 		if (this.poisonAttack > 0 ) {
 			System.out.println("さらに毒の胞子をばらまいた！");
