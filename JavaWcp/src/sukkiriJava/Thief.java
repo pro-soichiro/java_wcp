@@ -13,15 +13,17 @@ public class Thief {
 	}
 	
 	public Thief(String name,int hp) {
-		this.name = name;
-		this.hp = hp;
-		this.mp = 5;
+//		this.name = name;
+//		this.hp = hp;
+//		this.mp = 5;
+		this(name, hp, 5);
 	}
 
 	public Thief(String name) {
-		this.name = name;
-		this.hp = 40;
-		this.mp = 5;
+//		this.name = name;
+//		this.hp = 40;
+//		this.mp = 5;
+		this(name, 40);
 	}
 	
 	
