@@ -13,8 +13,7 @@ public class Hero {
 	}
 	
 	public Hero() {
-		this.hp = 100;
-		this.name = "名無しの勇者";
+		this("名無しの勇者");
 	}
 	
 	public void attack() {   
