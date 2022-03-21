@@ -12,5 +12,15 @@ public class Cleric {
 		this.mp -= 5;
 		this.hp = MAX_HP;
 	}
+	public int pray(int sec){
+		
+		int mp = new java.util.Random().nextInt(2) + sec;
+		
+		if((this.mp + mp) <= MAX_MP) {
+			this.mp += mp;
+		}
+		
+		return mp;
+	}
 	
 }
