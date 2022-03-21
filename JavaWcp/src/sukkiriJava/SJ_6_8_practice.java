@@ -24,6 +24,6 @@ public class SJ_6_8_practice {
 	
 //	6-5
 	
-//	c:¥javaapp¥koumon¥comment
+//	c:¥javaapp¥koumon
 
 }
