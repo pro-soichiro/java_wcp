@@ -16,8 +16,10 @@ public class Hero {
 		this("名無しの勇者");
 	}
 	
-	public void attack() {   
-		System.out.println(this.name + "は、" + sword.name + "で攻撃した！");
+	public void attack(Matango m) {   
+		System.out.println(this.name + "の攻撃！");
+		m.hp -= 5;
+		System.out.println(this.name + "5ポイントのダメージを与えた！");
 	}
 //	名前：sleep
 //	必要情報：なし
