@@ -1,6 +1,6 @@
 package sukkiriJava;
 
-public abstract class TangibleAsset {
+public abstract class TangibleAsset extends Asset {
 	
 	String name;
 	int price;
