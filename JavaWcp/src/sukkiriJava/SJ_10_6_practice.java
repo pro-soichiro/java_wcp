@@ -21,7 +21,10 @@ public class SJ_10_6_practice {
 		PoisonMatango m = new PoisonMatango('A');
 //		PoisonMatango m = new PoisonMatango();
 		
-		m.attack(h);
+		System.out.println(m.hp);
+		h.attack(m);
+		System.out.println(m.hp);
+//		m.attack(h);
 		
 	}
 

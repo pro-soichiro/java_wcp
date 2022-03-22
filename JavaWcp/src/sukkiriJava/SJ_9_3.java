@@ -14,7 +14,7 @@ public class SJ_9_3 {
 		h.sword = s;
 	
 		System.out.println(h.name + "の現在の武器は" + h.sword.name + "です。");
-		h.attack();
+//		h.attack();
 	}
 
 }
