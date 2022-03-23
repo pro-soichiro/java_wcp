@@ -3,6 +3,6 @@ package sukkiriJava;
 public interface Thing {
 	
 	double getWeight();
-	double setWeight();
+	void setWeight(double weight);
 	
 }
